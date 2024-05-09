@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--------------------NAVBAR-------------------->
+
+      <header>
+        <nav class="navbar">
+          <ul>
+            <li onclick="showSidebar()" class="menu">
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </li>
+            <li class="logo">Muhammed Hasan</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-projects.html">My Projects</a></li>
+            <li><a href="skills.html">My Skills</a></li>
+
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--------------------SIDEBAR-------------------->
+
+      <aside class="sidebar">
+        <nav>
+          <ul>
+            <li onclick="closeSidebar()">
+              <img class="cross" src="src/cross.png" />
+            </li>
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-house fa-xl"></i
+                ><span class="link-text">Home</span></a
+              >
+            </li>
+            <li>
+              <a href="my-projects.html"
+                ><i class="fa-solid fa-folder fa-xl"></i
+                ><span class="link-text">My Projects</span></a
+              >
+            </li>
+            <li>
+              <a href="experience.html"
+                ><i class="fa-solid fa-suitcase fa-xl"></i
+                ><span class="link-text">Previous Work</span></a
+              >
+            </li>
+            <li>
+              <a href="interests.html"
+                ><i class="fa-solid fa-heart fa-xl"></i
+                ><span class="link-text">My Interests</span></a
+              >
+            </li>
+            <li>
+              <a href="skills.html"
+                ><i class="fa-solid fa-list fa-xl"></i
+                ><span class="link-text">My Skills</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main>
+        <div class="contact-container">
+          <div class="form">
+            <div class="contact-info">
+              <h3>Let's get in touch</h3>
+              <p class="text">
+                Thank you for taking your time to look through my portfolio, if
+                you wish to contact me for any Job opportunities or have an
+                enquiry please fill in the form with the reason of contact.
+              </p>
+
+              <div class="info">
+                <div class="contact-information">
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot fa-xl contact-icon contact-icon1"
+                    ></i>
+                    London
+                  </p>
+                </div>
+
+                <div class="contact-information">
+                  <p>
+                    <i
+                      class="fa-regular fa-envelope fa-xl contact-icon contact-icon2"
+                    ></i>
+                    muhammed.husam.hasan@gmail.com
+                  </p>
+                </div>
+
+                <div class="contact-information">
+                  <p>
+                    <i
+                      class="fa-regular fa-file fa-xl contact-icon contact-icon3"
+                    ></i>
+                    Full CV available upon request
+                  </p>
+                </div>
+
+                <div class="contact-page-links">
+                  <h4>Connect with me:</h4>
+                  <div class="social-icons">
+                    <a
+                      href="https://www.linkedin.com/in/muhammed-hasan-32952a301"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-linkedin fa-xl"></i
+                    ></a>
+
+                    <a href="mailto:muhammed.husam.hasan@gmail.com"
+                      ><i class="fa-regular fa-envelope fa-xl"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <span class="circle circle-one"></span>
+              <span class="circle circle-two"></span>
+
+              <form action="index.html">
+                <h3 class="title">Contact Me</h3>
+                <div class="input-container">
+                  <input type="text" name="name" class="input" required />
+                  <label for="">Full Name</label>
+                  <span>Full Name</span>
+                </div>
+
+                <div class="input-container">
+                  <input type="email" name="email" class="input" required />
+                  <label for="">Email</label>
+                  <span>Email</span>
+                </div>
+
+                <div class="input-container">
+                  <input type="tel" name="phone" class="input" />
+                  <label for="">Phone Number</label>
+                  <span>Phone Number</span>
+                </div>
+
+                <div class="input-container textarea">
+                  <textarea
+                    name="message"
+                    class="input"
+                    required
+                    autocomplete="off"
+                  ></textarea>
+                  <label for="">Message</label>
+                  <span>Message</span>
+                </div>
+
+                <input type="submit" value="Send" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------MOBILE NAV BAR-------------------->
+
+        <div>
+          <ul class="mobile-nav">
+            <li>
+              <a href="#main"><i class="ri-home-line hidden"></i></a>
+            </li>
+            <li>
+              <div id="toggleMode">
+                <i class="ri-moon-line toggle-button"></i>
+              </div>
+            </li>
+            <li>
+              <a href="#header"><i class="ri-skip-up-line hidden"></i></a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "muhammed.husam.hasan@gmail.com",
+        Password: "password",
+        To: "muhammed.husam.hasan@gmail.com",
+        From: document.querySelector(".email").value,
+        Subject: "New Contact Form Enquiry",
+        Body:
+          "Name: " +
+          document.querySelector(".name").value +
+          "<br> Email: " +
+          document.querySelector(".email").value +
+          "<br> Phone Number: " +
+          document.querySelector(".phone").value +
+          "<br> Message: " +
+          document.querySelector(".message").value,
+      }).then((message) => alert("Message Sent Successfully"));
+    </script>
+  </body>
+</html>

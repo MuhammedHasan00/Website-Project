@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--------------------NAVBAR-------------------->
+
+      <header id="header">
+        <nav class="navbar">
+          <ul>
+            <li onclick="showSidebar()" class="menu">
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </li>
+            <li class="logo">Muhammed Hasan</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-projects.html">My Projects</a></li>
+            <li><a href="skills.html">My Skills</a></li>
+
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--------------------SIDEBAR-------------------->
+
+      <aside class="sidebar">
+        <nav>
+          <ul>
+            <li onclick="closeSidebar()">
+              <img class="cross" src="src/cross.png" />
+            </li>
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-house fa-xl"></i
+                ><span class="link-text">Home</span></a
+              >
+            </li>
+            <li>
+              <a href="my-projects.html"
+                ><i class="fa-solid fa-folder fa-xl"></i
+                ><span class="link-text">My Projects</span></a
+              >
+            </li>
+            <li>
+              <a href="experience.html"
+                ><i class="fa-solid fa-suitcase fa-xl"></i
+                ><span class="link-text">Previous Work</span></a
+              >
+            </li>
+            <li>
+              <a href="interests.html"
+                ><i class="fa-solid fa-heart fa-xl"></i
+                ><span class="link-text">My Interests</span></a
+              >
+            </li>
+            <li>
+              <a href="skills.html"
+                ><i class="fa-solid fa-list fa-xl"></i
+                ><span class="link-text">My Skills</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main id="main">
+        <!--------------------HOME PAGE-------------------->
+
+        <section class="home-section">
+          <div class="home-rectangle">
+            <div class="home-container">
+              <section class="intro">
+                <div class="introduction-video">
+                  <video autoplay loop muted>
+                    <source src="src/portfolio_video.mp4" />
+                  </video>
+                </div>
+              </section>
+              <div class="introduction">
+                <h1 class="job-title">Software Engineer</h1>
+                <h1 class="myName">Muhammed Hasan</h1>
+                <h1 class="my-location">London</h1>
+                <div class="introduction-icons">
+                  <a href="https://github.com/MuhammedHasan00" target="_blank"
+                    ><i class="ri-github-fill button-glow"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/muhammed-hasan-32952a301"
+                    class="button-glow"
+                    target="_blank"
+                    ><i class="ri-linkedin-box-fill"></i
+                  ></a>
+                </div>
+                <div class="buttons">
+                  <a
+                    href="src/three.png"
+                    download="three.png"
+                    class="button button-glow"
+                    >Download CV</a
+                  >
+                  <a href="#about-me" class="button button-glow">About Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--------------------ABOUT ME-------------------->
+
+        <section class="information">
+          <div id="about-me" class="about-me">
+            <h1>About Me</h1>
+
+            <div class="home-textbox about-box">
+              <p>
+                Hi there! I am <b>Muhammed Hasan</b> -
+                <b>a Junior Software Developer</b>
+                based in London, Uk and have a passion for IT
+              </p>
+              <br />
+              <p>
+                My background consists of a
+                <b
+                  >12 Week intensive Softwarea Development Bootcamp provided by
+                  JustIT
+                </b>
+                and experience in many languages during university.
+              </p>
+              <br />
+              <p>
+                I aspire to become a <b>proficient Software Developer </b>,
+                equipped with both the skills and experience to implement
+                cutting-edge solutions that positively impact businesses and
+                communities.
+              </p>
+              <br />
+              <p>
+                My overarching objective is to continually expand my knowledge
+                and capabilities within my field as technology is a sector where
+                its continuously improving and working in this sector means you
+                must adapt to such situations.
+              </p>
+            </div>
+            <div class="about-me2">
+              <div class="home-textbox about-box textbox2">
+                <h2>What Languages do I know?</h2>
+                <p>
+                  Having experience in coding languages such as
+                  <b>HTML, CSS, Javascript </b> and more has allowed me to
+                  develop many projects such as this portfolio website as well
+                  as
+                  <span class="link-to-projects"
+                    ><a href="my-projects.html"> my other projects.</a></span
+                  >
+                </p>
+                <div>
+                  <img src="src/html-icon.png" class="language-icons" alt="" />
+                  <img src="src/css-icon.png" class="language-icons" alt="" />
+                  <img src="src/js-icon.png" class="language-icons" alt="" />
+                  <img src="src/mysql-icon.png" class="language-icons" alt="" />
+                </div>
+              </div>
+
+              <div class="home-textbox about-box textbox2">
+                <div class="home-textbox">
+                  <ul>
+                    <li>
+                      <p>Communication</p>
+                    </li>
+                    <li>
+                      <p>Coding</p>
+                    </li>
+                    <li>
+                      <p>Attention To Detail</p>
+                    </li>
+                    <li>
+                      <p>Problem Solving</p>
+                    </li>
+                    <li>
+                      <p>Team Work</p>
+                    </li>
+                    <li>
+                      <p>Disciplined</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--------------------RECENT PROJECTS-------------------->
+
+        <section class="recent-projects">
+          <h1 class="page-title">Recent Projects</h1>
+
+          <div class="slideshow">
+            <div class="slider-wrapper">
+              <div class="recent-project-cards">
+                <div class="card-container">
+                  <div class="recent-card">
+                    <div class="front">
+                      <img
+                        src="/src/calc_nobg.png"
+                        alt="Picture of Calculator Application"
+                      />
+                      <h2>Calculator App</h2>
+                    </div>
+                    <div class="back">
+                      <h2>Calculator App</h2>
+                      <p>
+                        A calculator application built to perform arithmetic
+                        operations such as addition, subtraction,
+                        multiplication, division and modulus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-container">
+                  <div class="recent-card">
+                    <div class="front">
+                      <img
+                        src="/src/weather_nobg.png"
+                        alt="Picture of Weather Application"
+                      />
+                      <h2>Weather App</h2>
+                    </div>
+                    <div class="back">
+                      <h2>Weather App</h2>
+                      <p>
+                        A calculator application built to perform arithmetic
+                        operations such as addition, subtraction,
+                        multiplication, division and modulus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-container">
+                  <div class="recent-card">
+                    <div class="front">
+                      <img
+                        src="/src/weather_nobg.png"
+                        alt="Picture of Weather Application"
+                      />
+                      <h2>Python Project</h2>
+                    </div>
+                    <div class="back">
+                      <h2>Weather App</h2>
+                      <p>
+                        A calculator application built to perform arithmetic
+                        operations such as addition, subtraction,
+                        multiplication, division and modulus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--------------------MOBILE NAV BAR-------------------->
+
+        <div>
+          <ul class="mobile-nav">
+            <li>
+              <a href="#main"><i class="ri-home-line hidden"></i></a>
+            </li>
+            <li>
+              <div id="toggleMode">
+                <i class="ri-moon-line toggle-button"></i>
+              </div>
+            </li>
+            <li>
+              <a href="#header"><i class="ri-skip-up-line hidden"></i></a>
+            </li>
+          </ul>
+        </div>
+      </main>
+
+      <!--------------------FOOTER-------------------->
+
+      <footer id="footer">
+        <p class="copyright">
+          ©Copyright. Muhammed Hasan. All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

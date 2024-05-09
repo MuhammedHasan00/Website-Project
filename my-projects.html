@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <title>My Projects</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--------------------NAVBAR-------------------->
+
+      <header>
+        <nav class="navbar">
+          <ul>
+            <li onclick="showSidebar()" class="menu">
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </li>
+            <li class="logo">Muhammed Hasan</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-projects.html">My Projects</a></li>
+            <li><a href="skills.html">My Skills</a></li>
+
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--------------------SIDEBAR-------------------->
+
+      <aside class="sidebar">
+        <nav>
+          <ul>
+            <li onclick="closeSidebar()">
+              <img class="cross" src="src/cross.png" />
+            </li>
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-house fa-xl"></i
+                ><span class="link-text">Home</span></a
+              >
+            </li>
+            <li>
+              <a href="my-projects.html"
+                ><i class="fa-solid fa-folder fa-xl"></i
+                ><span class="link-text">My Projects</span></a
+              >
+            </li>
+            <li>
+              <a href="experience.html"
+                ><i class="fa-solid fa-suitcase fa-xl"></i
+                ><span class="link-text">Previous Work</span></a
+              >
+            </li>
+            <li>
+              <a href="interests.html"
+                ><i class="fa-solid fa-heart fa-xl"></i
+                ><span class="link-text">My Interests</span></a
+              >
+            </li>
+            <li>
+              <a href="skills.html"
+                ><i class="fa-solid fa-list fa-xl"></i
+                ><span class="link-text">My Skills</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <h1 class="page-title">My Projects</h1>
+
+        <div class="project-box">
+          <div class="project-card">
+            <img class="project-img" src="/src/calculatorAppSS.JPG" alt="Picture of Calculator Application" />
+            <div class="project-content">
+              <h2>Calculator App</h2>
+              <p>
+                A calculator application built to perform arithmetic operations
+                such as addition, subtraction, multiplication, division and
+                modulus.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="src/weatherAppSS.JPG" alt="Picture of Weather Application" class="project-img" />
+            <div class="project-content">
+              <h2>Weather App</h2>
+              <p>
+                A Weather Application built to provide the current weather + the
+                next 5 days based on the city from the users input
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img class="project-img" src="/src/sqlpptSS.JPG" alt="" />
+            <div class="project-content">
+              <h2>MySQL Presentation</h2>
+              <p>
+                Group project presentation on SQL Query Techniques during my
+                time in the Software Development Bootcamp by JustIT
+              </p>
+              <div class="presentation">
+              <button>
+                <a
+                  href="src/SQL_Query_Techniques.pptx"
+                  download="SQL_Query_Techniques.pptx"
+                  class="button"
+                  >Download Presentation</a
+                >
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer></footer>
+    </div>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function closeSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <title>My Previous Experience</title>
+</head>
+<body>
+
+  <div class="container">
+    <!--------------------NAVBAR-------------------->
+
+    <header id="header">
+      <nav class="navbar">
+        <ul>
+          <li onclick="showSidebar()" class="menu">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </li>
+          <li class="logo">Muhammed Hasan</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-projects.html">My Projects</a></li>
+          <li><a href="skills.html">My Skills</a></li>
+
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--------------------SIDEBAR-------------------->
+
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li onclick="closeSidebar()">
+            <img class="cross" src="src/cross.png" />
+          </li>
+          <li>
+            <a href="index.html"
+              ><i class="fa-solid fa-house fa-xl"></i
+              ><span class="link-text">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="my-projects.html"
+              ><i class="fa-solid fa-folder fa-xl"></i
+              ><span class="link-text">My Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="experience.html"
+              ><i class="fa-solid fa-suitcase fa-xl"></i
+              ><span class="link-text">Previous Work</span></a
+            >
+          </li>
+          <li>
+            <a href="interests.html"
+              ><i class="fa-solid fa-heart fa-xl"></i
+              ><span class="link-text">My Interests</span></a
+            >
+          </li>
+          <li>
+            <a href="skills.html"
+              ><i class="fa-solid fa-list fa-xl"></i
+              ><span class="link-text">My Skills</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+        <main>
+            <h1 class="page-title">My Work Experience</h1>
+            
+            <div class="timeline">
+              <div class="container2 left-container slideInLeft">
+                  <img src="src/one.png">
+                  <div class="textbox">
+                      <h2>Research Intern</h2>
+                      <small>July 2015- August 2015</small>
+                      <ul class="listing">
+                        <li>Plan and complete a variety of legal tasks as assigned in the areas of public law and private law cases.</li>
+                        <li>Prepare court documents, such as court applications, case summaries, threshold documents, and other standard pleadings; to gather testimony; to prepare requests for police disclosure; and, putting cases together for trial, communicating with pertinent parties, going to case conferences and meetings, and appearing in court as necessary.</li>
+                        <li>To liaise with managers in the relevant departments keeping them informed of the progress of cases and ensuring that parties are aware of and comply with their deadlines.</li>
+                        <li>Performing literature reviews and conducting research whilst summarising findings</li>
+                        <li>Gathering information for filing and serving documents, as well as for issuing and serving court notices and witness summonses.</li>
+                    </ul>
+                      <span class="left-container-arrow"></span>
+                  </div>
+              </div>
+
+              <div class="container2 right-container slideInRight">
+                  <img src="src/two.png">
+                  <div class="textbox">
+                    <h2>Teacher Assistant</h2>
+                    <small>June 2015 - July 2015</small><small>0ctober 2018- December 2018</small>
+                    <ul class="listing">
+                        <li>Assessing student learning needs and weakness areas</li>
+                        <li>Answering to student inquiries, helping with assignments, and recommending learning methods.</li>
+                        <li>Listening to children read, reading to them and helping children who need extra support to complete tasks</li>
+                        <li>Helping teachers to plan learning activities and compete records supporting teachers in managing class behaviour</li>
+                        <li>Supervising group activities</li>
+                        <li>Taking part in training and carrying out admin tasks</li>
+                        <li>Assigned a study group where I provided students with support and guidance</li>
+                    </ul>
+                      <span class="right-container-arrow"></span>
+                  </div>
+              </div>
+
+              <div class="container2 left-container slideInLeft">
+                  <img src="src/three.png">
+                  <div class="textbox">
+                    <h2>Trading Assistant</h2>
+                    <small>August 2019-November 2020</small><small> September 2021-November 2022</small>
+                    <ul class="listing">
+                        <li>Interacting with customers and dealing with customer enquiries</li>
+                        <li>Monitoring and operating trading platforms which run 24/7</li>
+                        <li>Spotting inconsistencies, errors and unusual behaviour</li>
+                        <li>Developing insights into customer, counterparty and market behaviour</li>
+                        <li>Liaising with traders, counterparties and trading venues on an ad hoc-basis</li>
+                        <li>Helping troubleshoot issues that arise in the trade cycle</li>
+                        <li>Collaborating with developers and traders to improve the functionality of our platform</li>
+                    </ul>
+                    <span class="left-container-arrow"></span>
+                  </div>
+              </div>
+
+          
+            <section>
+                
+            </section>
+
+            <section>
+                
+            </section>
+        </main>
+        
+        <footer>
+          
+        </footer>
+    </div>
+
+    <script>
+        function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display='flex'
+        }
+
+        function closeSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+</body>
+</html>
