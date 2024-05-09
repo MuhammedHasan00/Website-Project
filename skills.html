@@ -12,9 +12,9 @@
       referrerpolicy="no-referrer"
     />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>My Skills</title>
   </head>
   <body>
@@ -122,21 +122,28 @@
             </p>
           </div>
         </section>
+        <!--------------------MOBILE NAV BAR-------------------->
+
+        <div>
+          <ul class="mobile-nav">
+            <li>
+              <a href="#main"><i class="ri-home-line hidden"></i></a>
+            </li>
+            <li>
+              <div id="toggleMode">
+                <i class="ri-moon-line toggle-button"></i>
+              </div>
+            </li>
+            <li>
+              <a href="#header"><i class="ri-skip-up-line hidden"></i></a>
+            </li>
+          </ul>
+        </div>
       </main>
 
       <footer></footer>
     </div>
 
-    <script>
-      function showSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "flex";
-      }
-
-      function closeSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "none";
-      }
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
