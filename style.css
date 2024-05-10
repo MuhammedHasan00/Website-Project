@@ -488,7 +488,6 @@ h1 {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: black;
   border-radius: 2rem;
   transition: transform 1500ms;
   transform-style: preserve-3d;
@@ -528,6 +527,28 @@ h1 {
 
 .back p {
   width: 80%;
+}
+
+.small-screen-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  color: black;
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.small-screen-card p{
+  width: 90%;
+  scale: 0.8;
+}
+
+.small-screen-container{
+  display: none;
 }
 
 /*----------------------MOBILE NAV----------------------*/
@@ -1195,7 +1216,7 @@ footer {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .navbar :nth-child(3) {
     display: none;
@@ -1331,7 +1352,19 @@ footer {
   }
 
   .card-container{
-    scale: 0.7;
+    display: none;
+  }
+
+  .small-screen-container{
+    display: flex;
+  }
+
+  .language-icons{
+   scale: 0.8;
+  }
+
+  .language-icons-container{
+    max-width: 300px;
   }
 }
 
