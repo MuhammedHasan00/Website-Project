@@ -564,16 +564,7 @@ h1 {
 .mobile-nav li a:visited {
   color: black;
 }
-/* 
-.hidden{
-  display: none;
-  
-}
 
-.toggle-button:hover{
-  animation: displayIcon 1s;
-  padding: 0 10px;
-} */
 
 /*----------------------TIMELINE----------------------*/
 .timeline {
@@ -1066,6 +1057,31 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px rgb(137, 109, 235) inset !important;
+}
+
+.success-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  overflow: hidden;
+  padding: 2.3rem 2.2rem;
+}
+
+.success-btn{
+  background-color: white;
+  border-radius: 25px;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  border-style: none;
+  z-index: 10;
+  max-width: fit-content;
+  margin: 2rem;
 }
 
 /*----------------------FOOTER----------------------*/
