@@ -237,6 +237,8 @@ body {
 .home-container {
   display: flex;
   align-items: center;
+  top: 50%;
+  transform: translateY(20%);
   align-content: center;
 }
 
@@ -294,7 +296,6 @@ body {
 .introduction {
   margin-bottom: 20px;
   position: relative;
-  grid-area: introText;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,10 +318,6 @@ body {
   text-wrap: nowrap;
 }
 
-.contact-links {
-  grid-area: contactLinks;
-}
-
 .link-to-projects a {
   color: white;
 }
@@ -328,21 +325,6 @@ body {
 #main {
   position: relative;
 }
-
-.toggleMode {
-  color: white;
-  display: flex;
-  position: absolute;
-  right: 0;
-  top: 70px;
-  font-size: 30px;
-  width: 50px;
-  border-radius: 50%;
-  padding: 10px;
-  background-color: black;
-  z-index: 10;
-}
-
 /*----------------------ABOUT ME----------------------*/
 
 .information {
@@ -664,7 +646,7 @@ h1 {
   width: 0;
   position: absolute;
   top: 28px;
-  z-index: 5;
+  z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-left: 15px solid #fff;
@@ -1207,6 +1189,22 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+
+  .home-rectangle {
+    min-width: 100%;
+    height: 30%;
+    transform: translate(0, -115%);
+  }
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -13rem;
+    grid-gap: 0;
+  }
+
+  .introduction{
+    margin-top: -8rem;
+  }
   aside {
     text-align: center;
   }
@@ -1226,9 +1224,6 @@ footer {
     display: none;
   }
 
-  .navbar :nth-child(5) {
-    display: none;
-  }
 
   .navbar :nth-child(2) {
     display: none;
@@ -1369,23 +1364,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  .home-rectangle {
-    min-width: 100%;
-    height: 30%;
-    transform: translate(0, -115%);
-
-    /* background: linear-gradient(
-      to bottom,
-      rgb(137, 109, 235) 0%,
-      rgb(137, 109, 235) 35%,
-      black 35%,
-      black 100%
-    ); */
-  }
-  .home-container {
-    display: flex;
-    flex-direction: column;
-    grid-gap: 0;
+  
+  .home-container{
+    margin-top: 0;
   }
 
   .intro {
@@ -1401,6 +1382,7 @@ footer {
 
   .introduction {
     padding-top: 1rem;
+    margin-top: 0;
   }
 
   .introduction-icons {
