@@ -140,7 +140,7 @@
               <span class="circle circle-one"></span>
               <span class="circle circle-two"></span>
 
-              <form action="index.html">
+              <form action="https://formsubmit.co/muhammed.husam.hasan@gmail.com" method="POST">
                 <h3 class="title">Contact Me</h3>
                 <div class="input-container">
                   <input type="text" name="name" class="input" required />
@@ -171,7 +171,7 @@
                   <span>Message</span>
                 </div>
 
-                <input type="submit" value="Send" class="btn" />
+                <input type="submit" value="Send" class="btn" id="btn" />
               </form>
             </div>
           </div>
@@ -199,24 +199,5 @@
 
     <script src="main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "muhammed.husam.hasan@gmail.com",
-        Password: "password",
-        To: "muhammed.husam.hasan@gmail.com",
-        From: document.querySelector(".email").value,
-        Subject: "New Contact Form Enquiry",
-        Body:
-          "Name: " +
-          document.querySelector(".name").value +
-          "<br> Email: " +
-          document.querySelector(".email").value +
-          "<br> Phone Number: " +
-          document.querySelector(".phone").value +
-          "<br> Message: " +
-          document.querySelector(".message").value,
-      }).then((message) => alert("Message Sent Successfully"));
-    </script>
   </body>
 </html>
