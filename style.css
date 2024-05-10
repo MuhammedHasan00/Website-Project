@@ -503,6 +503,10 @@ h1 {
   background-color: none;
 }
 
+.front h2 a:visited{
+color: black;
+}
+
 .back {
   transform: rotateY(180deg);
 }
