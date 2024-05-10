@@ -1060,6 +1060,13 @@ textarea.input {
   width: 50%;
   opacity: 1;
 }
+/*change autofill colours to background colour*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(137, 109, 235) inset !important;
+}
 
 /*----------------------FOOTER----------------------*/
 
