@@ -19,21 +19,19 @@ let mobileLinks = document.querySelectorAll(".mobile-nav li a:link");
 let navIcon = document.querySelectorAll(".mobile-nav li a i");
 //--------------------LIGHTMODE/DARKMODE--------------------//
 
-
-
 document.getElementById("toggleMode").addEventListener("click", function () {
   let navbar = document.querySelector(".navbar");
   let navbarLinks = document.querySelectorAll(".navbar a:link");
   let buttons = document.querySelectorAll(".button");
   let textboxes = document.querySelectorAll(".textbox");
-  let homeTextbox = document.querySelectorAll(".home-textbox")
-  let cardFront = document.querySelectorAll(".front")
-  let cardBack = document.querySelectorAll(".back")
-  let cardFrontLinks = document.querySelectorAll(".front h2 a")
-  let smallCard = document.querySelector(".small-screen-card")
-  let projectCard = document.querySelectorAll(".project-card")
-  let timelineLine = document.querySelector(".timeline")
-  console.log(projectCard)
+  let homeTextbox = document.querySelectorAll(".home-textbox");
+  let cardFront = document.querySelectorAll(".front");
+  let cardBack = document.querySelectorAll(".back");
+  let cardFrontLinks = document.querySelectorAll(".front h2 a");
+  let smallCard = document.querySelector(".small-screen-card");
+  let projectCard = document.querySelectorAll(".project-card");
+  let timelineLine = document.querySelector(".timeline");
+  console.log(projectCard);
 
   body.style.backgroundColor =
     body.style.backgroundColor === "white" ? "black" : " white";
@@ -91,7 +89,8 @@ document.getElementById("toggleMode").addEventListener("click", function () {
 
   smallCard.style.color = smallCard.style.color === "white" ? "black" : "white";
 
-  smallCard.style.backgroundColor = smallCard.style.backgroundColor === "black" ? "white" : "black";
+  smallCard.style.backgroundColor =
+    smallCard.style.backgroundColor === "black" ? "white" : "black";
 
   projectCard.forEach((card) => {
     card.style.color = card.style.color === "white" ? "black" : "white";
@@ -99,7 +98,8 @@ document.getElementById("toggleMode").addEventListener("click", function () {
       card.style.backgroundColor === "black" ? "white" : "black";
   });
 
-  timelineLine.style.backgroundColor = timelineLine.style.backgroundColor === "black" ? "white" : "black";
+  timelineLine.style.backgroundColor =
+    timelineLine.style.backgroundColor === "black" ? "white" : "black";
 
   let footer = document.getElementById("footer");
   footer.style.color = footer.style.color === "black" ? "white" : "black";
@@ -134,7 +134,7 @@ function inputFocus() {
 
 function inputUnFocus() {
   let parent = this.parentNode;
-  if (this.value == ""){
+  if (this.value == "") {
     parent.classList.remove("focus");
   }
 }
