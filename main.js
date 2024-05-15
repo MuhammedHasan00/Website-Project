@@ -111,10 +111,9 @@ document.getElementById("toggleMode").addEventListener("click", function () {
       smallCard.style.backgroundColor === "black" ? "white" : "black";
   }
 
-  // if (timelineLine) {
-  //   timelineLine.style.backgroundColor =
-  //     timelineLine.style.backgroundColor === "black" ? "white" : "black";
-  // }
+  if (timelineLine) {
+    timelineLine.classList.toggle("dark-mode")
+  }
   if (projectCard) {
     projectCard.forEach((card) => {
       card.style.color = card.style.color === "white" ? "black" : "white";

@@ -597,11 +597,15 @@ h1 {
   position: absolute;
   width: 6px;
   height: 100%;
-  background: #ffff;
+  background-color: white;
   top: 0;
   left: 50%;
   animation: moveLine 9.5s;
   z-index: 0;
+}
+
+.dark-mode::after {
+  background-color: black; /* Background color for dark mode */
 }
 
 .container2 {
@@ -1256,6 +1260,7 @@ footer {
 
   .timeline::after {
     left: 21px;
+    
   }
 
   .container2 {
