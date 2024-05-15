@@ -17,92 +17,129 @@ let mobileNav = document.querySelector(".mobile-nav");
 let mobileIcons = document.querySelectorAll(".mobile-nav li");
 let mobileLinks = document.querySelectorAll(".mobile-nav li a:link");
 let navIcon = document.querySelectorAll(".mobile-nav li a i");
+
+let navbar = document.querySelector(".navbar");
+let navbarLinks = document.querySelectorAll(".navbar a:link");
+let buttons = document.querySelectorAll(".button");
+let textboxes = document.querySelectorAll(".textbox");
+let homeTextbox = document.querySelectorAll(".home-textbox");
+let cardFront = document.querySelectorAll(".front");
+let cardBack = document.querySelectorAll(".back");
+let cardFrontLinks = document.querySelectorAll(".front h2 a");
+let smallCard = document.querySelector(".small-screen-card");
+let projectCard = document.querySelectorAll(".project-card");
+let timelineLine = document.querySelector(".timeline");
+let contactpage = document.querySelector(".contact-info");
+let contactForm = document.querySelector(".form");
+let footer = document.getElementById("footer");
 //--------------------LIGHTMODE/DARKMODE--------------------//
 
 document.getElementById("toggleMode").addEventListener("click", function () {
-  let navbar = document.querySelector(".navbar");
-  let navbarLinks = document.querySelectorAll(".navbar a:link");
-  let buttons = document.querySelectorAll(".button");
-  let textboxes = document.querySelectorAll(".textbox");
-  let homeTextbox = document.querySelectorAll(".home-textbox");
-  let cardFront = document.querySelectorAll(".front");
-  let cardBack = document.querySelectorAll(".back");
-  let cardFrontLinks = document.querySelectorAll(".front h2 a");
-  let smallCard = document.querySelector(".small-screen-card");
-  let projectCard = document.querySelectorAll(".project-card");
-  let timelineLine = document.querySelector(".timeline");
-  console.log(projectCard);
+  if (body) {
+    body.style.backgroundColor =
+      body.style.backgroundColor === "white" ? "black" : " white";
+    body.style.color = body.style.color === "black" ? "white" : "black";
+  }
+  if (mobileNav) {
+    mobileNav.style.backgroundColor =
+      mobileNav.style.backgroundColor === "rgba(0, 0, 0, 0.8)"
+        ? "rgba(255, 255, 255, 0.8)"
+        : "rgba(0, 0, 0, 0.8)";
+  }
 
-  body.style.backgroundColor =
-    body.style.backgroundColor === "white" ? "black" : " white";
-  body.style.color = body.style.color === "black" ? "white" : "black";
+  if (mobileIcons) {
+    mobileIcons.forEach((icon) => {
+      icon.style.color = icon.style.color === "white" ? "black" : "white";
+    });
+  }
+  if (mobileLinks) {
+    mobileLinks.forEach((link) => {
+      link.style.color = link.style.color === "white" ? "black" : "white";
+    });
+  }
+  if (navbar) {
+    navbar.style.color = navbar.style.color === "black" ? "white" : "black";
+  }
+  if (navbarLinks) {
+    navbarLinks.forEach((link) => {
+      link.style.color = link.style.color === "black" ? "white" : "black";
+    });
+  }
+  if (buttons) {
+    buttons.forEach((button) => {
+      button.style.color = button.style.color === "black" ? "white" : "black";
+    });
+  }
+  if (textboxes) {
+    textboxes.forEach((textbox) => {
+      textbox.style.color = textbox.style.color === "white" ? "black" : "white";
+      textbox.style.backgroundColor =
+        textbox.style.backgroundColor === "black" ? "white" : "black";
+    });
+  }
+  if (homeTextbox) {
+    homeTextbox.forEach((textbox) => {
+      textbox.style.color = textbox.style.color === "white" ? "black" : "white";
+      textbox.style.backgroundColor =
+        textbox.style.backgroundColor === "black" ? "white" : "black";
+    });
+  }
+  if (cardFront) {
+    cardFront.forEach((card) => {
+      card.style.color = card.style.color === "white" ? "black" : "white";
+      card.style.backgroundColor =
+        card.style.backgroundColor === "black" ? "white" : "black";
+    });
+  }
+  if (cardBack) {
+    cardBack.forEach((card) => {
+      card.style.color = card.style.color === "white" ? "black" : "white";
+      card.style.backgroundColor =
+        card.style.backgroundColor === "black" ? "white" : "black";
+    });
+  }
+  if (cardFrontLinks) {
+    cardFrontLinks.forEach((card) => {
+      card.style.color = card.style.color === "white" ? "black" : "white";
+    });
+  }
+  if (smallCard) {
+    smallCard.style.color =
+      smallCard.style.color === "white" ? "black" : "white";
 
-  mobileNav.style.backgroundColor =
-    mobileNav.style.backgroundColor === "rgba(0, 0, 0, 0.8)"
-      ? "rgba(255, 255, 255, 0.8)"
-      : "rgba(0, 0, 0, 0.8)";
+    smallCard.style.backgroundColor =
+      smallCard.style.backgroundColor === "black" ? "white" : "black";
+  }
 
-  mobileIcons.forEach((icon) => {
-    icon.style.color = icon.style.color === "white" ? "black" : "white";
-  });
+  // if (timelineLine) {
+  //   timelineLine.style.backgroundColor =
+  //     timelineLine.style.backgroundColor === "black" ? "white" : "black";
+  // }
+  if (projectCard) {
+    projectCard.forEach((card) => {
+      card.style.color = card.style.color === "white" ? "black" : "white";
+      card.style.backgroundColor =
+        card.style.backgroundColor === "black" ? "white" : "black";
+    });
+  }
 
-  mobileLinks.forEach((link) => {
-    link.style.color = link.style.color === "white" ? "black" : "white";
-  });
+  if (contactpage) {
+    contactpage.style.color =
+      contactpage.style.color === "white" ? "black" : "white";
 
-  navbar.style.color = navbar.style.color === "black" ? "white" : "black";
+    contactpage.style.backgroundColor =
+      contactpage.style.backgroundColor === "black" ? "white" : "black";
+  }
 
-  navbarLinks.forEach((link) => {
-    link.style.color = link.style.color === "black" ? "white" : "black";
-  });
-
-  buttons.forEach((button) => {
-    button.style.color = button.style.color === "black" ? "white" : "black";
-  });
-
-  textboxes.forEach((textbox) => {
-    textbox.style.color = textbox.style.color === "white" ? "black" : "white";
-    textbox.style.backgroundColor =
-      textbox.style.backgroundColor === "black" ? "white" : "black";
-  });
-  homeTextbox.forEach((textbox) => {
-    textbox.style.color = textbox.style.color === "white" ? "black" : "white";
-    textbox.style.backgroundColor =
-      textbox.style.backgroundColor === "black" ? "white" : "black";
-  });
-
-  cardFront.forEach((card) => {
-    card.style.color = card.style.color === "white" ? "black" : "white";
-    card.style.backgroundColor =
-      card.style.backgroundColor === "black" ? "white" : "black";
-  });
-
-  cardBack.forEach((card) => {
-    card.style.color = card.style.color === "white" ? "black" : "white";
-    card.style.backgroundColor =
-      card.style.backgroundColor === "black" ? "white" : "black";
-  });
-
-  cardFrontLinks.forEach((card) => {
-    card.style.color = card.style.color === "white" ? "black" : "white";
-  });
-
-  smallCard.style.color = smallCard.style.color === "white" ? "black" : "white";
-
-  smallCard.style.backgroundColor =
-    smallCard.style.backgroundColor === "black" ? "white" : "black";
-
-  projectCard.forEach((card) => {
-    card.style.color = card.style.color === "white" ? "black" : "white";
-    card.style.backgroundColor =
-      card.style.backgroundColor === "black" ? "white" : "black";
-  });
-
-  timelineLine.style.backgroundColor =
-    timelineLine.style.backgroundColor === "black" ? "white" : "black";
-
-  let footer = document.getElementById("footer");
-  footer.style.color = footer.style.color === "black" ? "white" : "black";
+  if (form) {
+    contactForm.boxShadow =
+      contactForm.boxShadow.trim() === "0 0 20px 1px rgba(255, 255, 255, 0.5)"
+        ? "0 0 20px 1px rgba(0, 0, 0, 0.5)"
+        : "0 0 20px 1px rgba(255, 255, 255, 0.5)";
+  }
+  if (footer) {
+    footer.style.color = footer.style.color === "black" ? "white" : "black";
+  }
 });
 
 //--------------------LINKS HOVER GLOW--------------------//
