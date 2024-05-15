@@ -950,6 +950,7 @@ form {
   font-size: 1.5rem;
   line-height: 1;
   margin-bottom: 0.7rem;
+  color: white;
 }
 
 .input-container {
@@ -960,10 +961,10 @@ form {
 .input {
   width: 100%;
   outline: none;
-  border: 2px solid #ffff;
+  border: 2px solid white;
   background: none;
   padding: 0.6rem 1.2rem;
-  color: #ffff;
+  color: white;
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -1000,8 +1001,8 @@ textarea.input {
 
 .btn {
   padding: 0.6rem 1.3rem;
-  background-color: #ffff;
-  border: 2px solid #ffff;
+  background-color: white;
+  border: 2px solid white;
   border-radius: 25px;
   color: rgb(137, 109, 235);
   font-weight: 800;
